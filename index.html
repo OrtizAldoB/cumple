@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños Nicole</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <audio id="bgMusic" src="musica/Shawn%20Mendes%20%E2%80%92%20There's%20Nothing%20Holding%20Me%20Back%20(Lyrics).mp3" preload="auto" loop></audio>
+    <div class="hearts-bg" aria-hidden="true"></div>
+
+    <div class="intro" id="intro">
+        <video id="introVideo" src="videos/inicio.mp4" preload="auto" playsinline></video>
+        <button class="intro-play" id="introPlay">Toca para empezar</button>
+        <p class="intro-title" id="introTitle">FELIZ CUMPLEAÑOS</p>
+    </div>
+    <div class="burst" id="burst" aria-hidden="true"></div>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="title">Feliz Cumpleaños Nicole</h1>
+            <p class="subtitle">29 de Octubre</p>
+            <p class="mensaje">Que este nuevo año te traiga todo lo bonito que te mereces</p>
+            <video class="hero-video" src="videos/inicio.mp4" autoplay loop muted playsinline preload="metadata" aria-label="Video de cumpleaños"></video>
+        </div>
+    </header>
+
+    <main class="gallery">
+        <div class="gallery-intro">
+            <h2>Nuestros recuerdos</h2>
+            <p>Cada momento contigo es especial</p>
+        </div>
+
+        <div class="carousel">
+            <button class="carousel-btn prev" id="prevBtn" aria-label="Anterior">&#8249;</button>
+            <div class="carousel-track" id="carouselTrack">
+                <article class="slide">
+                    <div class="slide-media">
+                        <img src="imagenes/el cafe que prefiero siempre sera verte a los ojos sin que nadie te haga sentir mal.jpeg" alt="El café que prefiero siempre será verte a los ojos" loading="lazy">
+                    </div>
+                    <div class="slide-content">
+                        <p class="slide-title">El café que prefiero siempre será verte a los ojos sin que nadie te haga sentir mal</p>
+                    </div>
+                </article>
+
+                <article class="slide">
+                    <div class="slide-media">
+                        <img src="imagenes/eres mi biker preferida .jpeg" alt="Eres mi biker preferida" loading="lazy">
+                    </div>
+                    <div class="slide-content">
+                        <p class="slide-title">Eres mi biker preferida</p>
+                    </div>
+                </article>
+
+                <article class="slide">
+                    <div class="slide-media">
+                        <img src="imagenes/eres mi perra preferida.jpeg" alt="Eres mi perra preferida" loading="lazy">
+                    </div>
+                    <div class="slide-content">
+                        <p class="slide-title">Eres mi perra preferida</p>
+                    </div>
+                </article>
+
+                <article class="slide">
+                    <div class="slide-media">
+                        <img src="imagenes/lugares bonitos.jpeg" alt="Los lugares que conozco contigo" loading="lazy">
+                    </div>
+                    <div class="slide-content">
+                        <p class="slide-title">Los lugares que conozco contigo son lugares a los que volvería pero solo con mi mejor amiga</p>
+                    </div>
+                </article>
+
+                <article class="slide slide-special">
+                    <div class="slide-media">
+                        <img src="imagenes/salida.jpeg" alt="Salida especial" loading="lazy">
+                    </div>
+                    <div class="slide-content">
+                        <p class="slide-title">Cada salida contigo se vuelve mi momento favorito</p>
+                        <p class="slide-subtitle">especial</p>
+                    </div>
+                </article>
+
+                <article class="slide slide-special">
+                    <div class="slide-media">
+                        <img src="imagenes/salida2.jpeg" alt="Salida2 especial" loading="lazy">
+                    </div>
+                    <div class="slide-content">
+                        <p class="slide-title">Aunque salgamos poco cada salida contigo vale oro</p>
+                        <p class="slide-subtitle">especial</p>
+                    </div>
+                </article>
+
+                <article class="slide">
+                    <div class="slide-media">
+                        <img src="imagenes/siempre me haces feliz .jpeg" alt="Siempre me haces feliz" loading="lazy">
+                    </div>
+                    <div class="slide-content">
+                        <p class="slide-title">Siempre me haces feliz</p>
+                    </div>
+                </article>
+
+                <article class="slide slide-video">
+                    <div class="slide-media">
+                        <video src="videos/siempre saco una sonrisa contigo.mp4" controls playsinline preload="metadata"></video>
+                    </div>
+                    <div class="slide-content">
+                        <p class="slide-title">Siempre saco una sonrisa contigo</p>
+                    </div>
+                </article>
+
+                <article class="slide slide-video">
+                    <div class="slide-media">
+                        <video src="videos/tus payasadas siempre son las mejores .mp4" controls playsinline preload="metadata"></video>
+                    </div>
+                    <div class="slide-content">
+                        <p class="slide-title">Tus payasadas siempre son las mejores</p>
+                    </div>
+                </article>
+
+                <article class="slide slide-video">
+                    <div class="slide-media">
+                        <video src="videos/salida1 no debo de perderte tu mama me pega.mp4" controls playsinline preload="metadata"></video>
+                    </div>
+                    <div class="slide-content">
+                        <p class="slide-title">No debo de perderte</p>
+                    </div>
+                </article>
+            </div>
+            <button class="carousel-btn next" id="nextBtn" aria-label="Siguiente">&#8250;</button>
+            <div class="carousel-dots" id="carouselDots"></div>
+        </div>
+
+        <section class="special-message">
+            <div class="special-content">
+                <h3>Las salidas especiales</h3>
+                <p>Aunque salgamos poco las salidas contigo son las más especiales para mí</p>
+                <p>Cada recuerdo contigo vale oro</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Con todo mi cariño para ti Nicole</p>
+        <p class="date">29 de Octubre</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
